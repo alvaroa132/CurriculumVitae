@@ -2,6 +2,7 @@
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Educación de Alvaro Achá</title>
   </head>
   <body>
@@ -36,7 +37,7 @@
             </tr>
             <tr>
               <td>2008</td>
-              <td>Don Bosco</td>
+              <td>Colegio Don Bosco</td>
               <td>Cochabamba, Bolivia</td>
               <td align="center">Si</td>
             </tr>
@@ -51,8 +52,20 @@
       <article>
         <h3>Agregar Estudios</h3>
           <form>
-            <label for="AñoEstudios">Año: </label>
-              <input type="number" name="AñoEstudios" maxlength="4" value="2016" >
+            <label for="AñoEstudios"><strong>Año: </strong></label>
+              <select name="AñoEstudios">
+                <option value="1">2016</option>
+                <option value="2">2017</option>
+                <option value="3">2018</option>
+              </select>
+            <br><br>
+            <label for="Institución"><strong>Institución: </strong></label>
+              <input type="text" name="Institución" required>
+            <br><br>
+            <label for="Lugar"><strong>Lugar: </strong></label>
+              <textarea name="Lugar" rows="1" cols="80" ></textarea>
+            <br><br>
+            <input type="submit" name="Enviar">
           </form>
       </article>
     </section>
